@@ -193,7 +193,7 @@ if(MSVC)
     target_compile_options(${BEHAVIOR_TREE_LIBRARY} PRIVATE /W4 /WX)
 else()
     target_compile_options(${BEHAVIOR_TREE_LIBRARY} PRIVATE
-        -Wall -Wextra -Werror=return-type)
+        -Wall -Wextra -Werror=return-type -Wno-unused-variable)
 endif()
 
 ######################################################
